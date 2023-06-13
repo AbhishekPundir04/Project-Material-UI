@@ -54,7 +54,7 @@ const Navbar = (props) => {
   };
 
   return (
-    <AppBar position="sticky" sx={{zIndex: 9999}}>
+    <AppBar position="sticky" sx={{zIndex: 99999,xs:"block"}} fullWidth>
       <StyleToolbar>
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block", md: "block"} }}>
           Web-app

@@ -13,10 +13,10 @@ const DashboardLayout = ({ children }) => {
         handleDrawerClose={()=>setSidebarOpen(!isSidebarOpen)}
         />
         <Grid container spacing={1}>
-          <Grid item xs={2}>
+          <Grid item xs={1.4}>
             <Sidebar isSidebarOpen={isSidebarOpen} handleDrawerClose={()=>setSidebarOpen(!isSidebarOpen)} />
           </Grid>
-          <Grid item xs={8}>
+          <Grid item xs={7} marginLeft={2}>
             {children}
           </Grid>
         </Grid>

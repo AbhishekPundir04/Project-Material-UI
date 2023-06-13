@@ -57,4 +57,157 @@ const Post = () => {
   );
 };
 
-export default Post;
+const Post2 = () => {
+
+  
+  return (
+    <Card sx={{ margin: 5 }}>
+      <CardHeader
+        avatar={
+          <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
+            R
+          </Avatar>
+        }
+        action={
+          <IconButton aria-label="settings">
+            <MoreVert />
+          </IconButton>
+        }
+        title="John Doe"
+        subheader="September 14, 2022"
+      />
+      <CardMedia
+        component="img"
+        height="20%"
+        image="https://images.freeimages.com/images/large-previews/590/puppy-1250141.jpg"
+        alt="Paella dish"
+      />
+      <CardContent>
+        <Typography variant="body2" color="text.secondary">
+          This impressive paella is a perfect party dish and a fun meal to cook
+          together with your guests. Add 1 cup of frozen peas along with the
+          mussels, if you like.
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+          <Checkbox
+            icon={<FavoriteBorder />}
+            checkedIcon={<Favorite sx={{ color: "red" }} />}
+          />
+        </IconButton>
+        <IconButton aria-label="share">
+          <Share />
+        </IconButton>
+      </CardActions>
+    </Card>
+  );
+};
+
+
+const Post3 = () => {
+
+  
+  return (
+    <Card sx={{ margin: 5 }}>
+      <CardHeader
+        avatar={
+          <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
+            R
+          </Avatar>
+        }
+        action={
+          <IconButton aria-label="settings">
+            <MoreVert />
+          </IconButton>
+        }
+        title="John Doe"
+        subheader="September 14, 2022"
+      />
+      <CardMedia
+        component="img"
+        height="20%"
+        image="https://images.freeimages.com/images/large-previews/810/highlander-1325292.jpg"
+        alt="Paella dish"
+      />
+      <CardContent>
+        <Typography variant="body2" color="text.secondary">
+          This impressive paella is a perfect party dish and a fun meal to cook
+          together with your guests. Add 1 cup of frozen peas along with the
+          mussels, if you like.
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+          <Checkbox
+            icon={<FavoriteBorder />}
+            checkedIcon={<Favorite sx={{ color: "red" }} />}
+          />
+        </IconButton>
+        <IconButton aria-label="share">
+          <Share />
+        </IconButton>
+      </CardActions>
+    </Card>
+  );
+};
+
+
+const Post4 = () => {
+
+  
+  return (
+    <Card sx={{ margin: 5 }}>
+      <CardHeader
+        avatar={
+          <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
+            R
+          </Avatar>
+        }
+        action={
+          <IconButton aria-label="settings">
+            <MoreVert />
+          </IconButton>
+        }
+        title="John Doe"
+        subheader="September 14, 2022"
+      />
+      <CardMedia
+        component="img"
+        height="20%"
+        image="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_1280.jpg"
+        alt="Paella dish"
+      />
+      <CardContent>
+        <Typography variant="body2" color="text.secondary">
+          This impressive paella is a perfect party dish and a fun meal to cook
+          together with your guests. Add 1 cup of frozen peas along with the
+          mussels, if you like.
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+          <Checkbox
+            icon={<FavoriteBorder />}
+            checkedIcon={<Favorite sx={{ color: "red" }} />}
+          />
+        </IconButton>
+        <IconButton aria-label="share">
+          <Share />
+        </IconButton>
+      </CardActions>
+    </Card>
+  );
+};
+
+const Allpost = () =>{
+  return (
+    <div>
+      <Post/>
+      <Post2/>
+      <Post3/>
+      <Post4/>
+    </div>
+  )
+}
+export default Allpost

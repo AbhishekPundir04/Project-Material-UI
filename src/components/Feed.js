@@ -1,6 +1,6 @@
 import { Box, Stack, Skeleton } from "@mui/material";
 import React, { useState } from "react";
-import Post from "./Post";
+import Allpost from "./Post";
 
 const Feed = () => {
 
@@ -22,12 +22,8 @@ const Feed = () => {
         </Stack>
       ) : (
         <>
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
+          <Allpost />
+         
         </>
       )}
     </Box>

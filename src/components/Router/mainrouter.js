@@ -9,6 +9,7 @@ import PrivateRouter from "./dashboardroutes";
 import PublicRouter from "./publicRouter";
 import MainDashboard from "../../Dashboard/mainDashboard";
 import Feed from "../Feed";
+import VideoFeed from "../VideoFeed";
 
 const MainRouter = () => {
   console.log("router");
@@ -23,7 +24,8 @@ const MainRouter = () => {
         </Route>
         <Route path="/" element={<PrivateRouter />}>
           <Route path="/dashboard" element={<MainDashboard/>}></Route>
-          <Route path="/homepage" element={<Feed/>}></Route>
+          <Route path="/feed" element={<Feed/>}></Route>
+          <Route path="/videoFeed" element={<VideoFeed/>}></Route>
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/about" element={<AboutUs />} />
